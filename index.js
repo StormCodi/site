@@ -1,16 +1,16 @@
 function Menu() {
     var hiddenDiv = document.getElementById('hidden');
     if (hiddenDiv.style.display === 'none') {
-      hiddenDiv.style.display = 'flex';
+        hiddenDiv.style.display = 'flex';
     } else {
-      hiddenDiv.style.display = 'none';
+        hiddenDiv.style.display = 'none';
     }
-  }
+}
 
-  var i = 0
-  
+var i = 0
 
-function lol(x){
+
+function lol(x) {
     if (document.getElementById(x).style.backgroundColor == "green") {
         console.log(i);
         i++;
@@ -28,8 +28,23 @@ function lol(x){
 function Numbers() {
     var hiddenDiv = document.getElementById('NumberPad');
     if (hiddenDiv.style.display === 'none') {
-      hiddenDiv.style.display = 'flex';
+        hiddenDiv.style.display = 'flex';
     } else {
-      hiddenDiv.style.display = 'none';
+        hiddenDiv.style.display = 'none';
     }
+}
+
+function AddNumber(number) {
+    var input = document.getElementById('input');
+    input.value += number;
+}
+
+function ClearInput() {
+    var input = document.getElementById('input');
+    input.value = '';
+}
+
+function RemoveLastNumber() {
+    var input = document.getElementById('input');
+    input.value = input.value.slice(0, -1);
 }

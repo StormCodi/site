@@ -33,43 +33,39 @@
 
     <div id="NumberPad" style="display: none;">
         <div style="width: 300px; height: 550px; background-color: lightgray; padding: 10px;">
-          <input type="text" id="input" style="width: 100%; height: 50px; font-size: 24px; text-align: center; margin-bottom: 10px;">
-          <div style="display: flex; flex-wrap: wrap; justify-content: center;">
-            <button onclick="AddNumber(1)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">1</button>
-            <button onclick="AddNumber(2)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">2</button>
-            <button onclick="AddNumber(3)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">3</button>
-            <button onclick="AddNumber(4)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">4</button>
-            <button onclick="AddNumber(5)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">5</button>
-            <button onclick="AddNumber(6)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">6</button>
-            <button onclick="AddNumber(7)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">7</button>
-            <button onclick="AddNumber(8)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">8</button>
-            <button onclick="AddNumber(9)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">9</button>
-            <button onclick="ClearInput()" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">Clear</button>
-            <button onclick="AddNumber(0)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">0</button>
-            <button onclick="RemoveLastNumber()" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">&lt;-</button>
-          </div>
+            <input type="number" id="input" autocomplete="off"
+                style="width: 100%; height: 50px; font-size: 24px; text-align: center; margin-bottom: 10px;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <button onclick="AddNumber(1)"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">1</button>
+                <button onclick="AddNumber(2)"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">2</button>
+                <button onclick="AddNumber(3)"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">3</button>
+                <button onclick="AddNumber(4)"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">4</button>
+                <button onclick="AddNumber(5)"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">5</button>
+                <button onclick="AddNumber(6)"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">6</button>
+                <button onclick="AddNumber(7)"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">7</button>
+                <button onclick="AddNumber(8)"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">8</button>
+                <button onclick="AddNumber(9)"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">9</button>
+                <button onclick="ClearInput()"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">Clear</button>
+                <button onclick="AddNumber(0)"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">0</button>
+                <button onclick="RemoveLastNumber()"
+                    style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">&lt;-</button>
+            </div>
         </div>
-      </div>
-      
-      
-      <script>
-        function AddNumber(number) {
-          var input = document.getElementById('input');
-          input.value += number;
-        }
-      
-        function ClearInput() {
-          var input = document.getElementById('input');
-          input.value = '';
-        }
-      
-        function RemoveLastNumber() {
-          var input = document.getElementById('input');
-          input.value = input.value.slice(0, -1);
-        }
-      </script>
-      
-   </div>
+    </div>
+
+
+    </div>
 </body>
 <script src="index.js"></script>
 
