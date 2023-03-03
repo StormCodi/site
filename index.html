@@ -11,14 +11,65 @@
 </head>
 
 <body>
-    <i id="bars" class="fa-solid fa-bars fa-3x" onclick="Clicked()"></i>
+    <div id="icons">
+        <i id="bars" class="fa-solid fa-bars fa-3x" onclick="Menu()"></i>
+        <i id="numbers" class="fa-solid fa-hashtag fa-3x" onclick="Numbers()"></i>
+    </div>
 
     <div id="hidden" style="display: none;">
-        Button 1:
-        <button>Button 1</button>
-        <button>Button 2</button>
-        <button>Button 3</button>
-      </div>      
+        <button id="1" onclick="lol(1)" class="color_switch">Button 1</button>
+        <button id="2" onclick="lol(2)" class="color_switch">Button 2</button>
+        <button id="3" onclick="lol(3)" class="color_switch">Button 3</button>
+        <button id="4" onclick="lol(4)" class="color_switch">Button 4</button>
+        <button id="5" onclick="lol(5)" class="color_switch">Button 5</button>
+        <button id="6" onclick="lol(6)" class="color_switch">Button 6</button>
+        <button id="7" onclick="lol(7)" class="color_switch">Button 7</button>
+        <button id="8" onclick="lol(8)" class="color_switch">Button 8</button>
+        <button id="9" onclick="lol(9)" class="color_switch">Button 9</button>
+        <button id="10" onclick="lol(10)" class="color_switch">Button 10</button>
+        <button id="11" onclick="lol(11)" class="color_switch">Button 11</button>
+
+    </div>
+
+    <div id="NumberPad" style="display: none;">
+        <div style="width: 300px; height: 550px; background-color: lightgray; padding: 10px;">
+          <input type="text" id="input" style="width: 100%; height: 50px; font-size: 24px; text-align: center; margin-bottom: 10px;">
+          <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <button onclick="AddNumber(1)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">1</button>
+            <button onclick="AddNumber(2)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">2</button>
+            <button onclick="AddNumber(3)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">3</button>
+            <button onclick="AddNumber(4)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">4</button>
+            <button onclick="AddNumber(5)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">5</button>
+            <button onclick="AddNumber(6)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">6</button>
+            <button onclick="AddNumber(7)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">7</button>
+            <button onclick="AddNumber(8)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">8</button>
+            <button onclick="AddNumber(9)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">9</button>
+            <button onclick="ClearInput()" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">Clear</button>
+            <button onclick="AddNumber(0)" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">0</button>
+            <button onclick="RemoveLastNumber()" style="width: 80px; height: 80px; margin: 5px; font-size: 24px;">&lt;-</button>
+          </div>
+        </div>
+      </div>
+      
+      
+      <script>
+        function AddNumber(number) {
+          var input = document.getElementById('input');
+          input.value += number;
+        }
+      
+        function ClearInput() {
+          var input = document.getElementById('input');
+          input.value = '';
+        }
+      
+        function RemoveLastNumber() {
+          var input = document.getElementById('input');
+          input.value = input.value.slice(0, -1);
+        }
+      </script>
+      
+   </div>
 </body>
 <script src="index.js"></script>
 
