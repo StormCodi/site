@@ -16,3 +16,13 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+#hidden {
+    display: none;
+    background-color: #6c7a89;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
