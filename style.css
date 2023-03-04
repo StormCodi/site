@@ -1,7 +1,3 @@
-#bars-div {
-    background-color: gray;
-}
-
 button {
     margin: 10px;
 }
@@ -14,13 +10,26 @@ body {
 }
 
 #icons {
-    float: right;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+#icons>* {
+    margin: 5px;
+}
+
+
+
 
 #hidden {
     display: none;
@@ -33,7 +42,7 @@ body {
 
 .color_switch {
     color: green;
-    background-color: blue;
+    background-color: green;
 }
 
 
@@ -44,16 +53,18 @@ body {
     margin: 10px auto;
     padding: 10px;
     box-sizing: border-box;
-  }
-  
-  #NumberPad button {
+    position: absolute;
+
+}
+
+#NumberPad button {
     width: 80px;
     height: 80px;
     margin: 5px;
     font-size: 24px;
     box-sizing: border-box;
-  }
-  
+}
+
 
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
@@ -61,3 +72,6 @@ input[type=number]::-webkit-inner-spin-button {
     margin: 0;
 }
 
+#bars {
+    float: right;
+}

@@ -1,4 +1,4 @@
-function Menu() {
+function Server() {
     var hiddenDiv = document.getElementById('hidden');
     if (hiddenDiv.style.display === 'none') {
         hiddenDiv.style.display = 'flex';
@@ -7,21 +7,17 @@ function Menu() {
     }
 }
 
-var i = 0
 
 
 function lol(x) {
     if (document.getElementById(x).style.backgroundColor == "green") {
-        console.log(i);
-        i++;
+
         document.getElementById(x).style.backgroundColor = "red";
         document.getElementById(x).style.color = "red";
 
     } else {
         document.getElementById(x).style.backgroundColor = "green"
         document.getElementById(x).style.color = "green";
-        console.log(i);
-        i++
     }
 }
 
@@ -47,4 +43,13 @@ function ClearInput() {
 function RemoveLastNumber() {
     var input = document.getElementById('input');
     input.value = input.value.slice(0, -1);
+}
+
+function OpenIcons() {
+    var hiddenDiv = document.getElementById('icons');
+    if (hiddenDiv.style.display === 'none') {
+        hiddenDiv.style.display = 'flex';
+    } else {
+        hiddenDiv.style.display = 'none';
+    }
 }
