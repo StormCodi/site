@@ -1,18 +1,25 @@
 #icons {
-    position: absolute;
-    top: 0;
-    right: 0; /* add this line to position the icons on the right */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  
-  #bars {
-    margin-right: 20px;
-  }
-  
+  position: absolute;
+  top: 0;
+  left: 50%; /* add this line to position the icons at the center */
+  transform: translateX(-50%); /* add this line to center the icons horizontally */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#icons i {
+  margin-right: 5px;
+}
+
+
+#bars {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
