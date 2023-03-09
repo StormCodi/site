@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://kit.fontawesome.com/ac39828301.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="test.css">
 </head>
+
 <body style="background-color: green;">
-    
+
+    <div style="margin-right: 20px; margin-top: 10px;">
+        <i id="bars" class="fa-solid fa-bars fa-3x" onclick="OpenIcons()"></i>
+    </div>
+
+    <div id="icons" style="display:none;">
+        <i id="server" class="fa-solid fa-server fa-3x" onclick="Server()"></i>
+        <i id="numbers" class="fa-solid fa-hashtag fa-3x" onclick="Numbers()"></i>
+        <i class="fa-solid fa-vial-circle-check fa-3x" onclick="window.location.href = 'test/test.html';"></i>
+    </div>
+    <script src="test.js"></script>
+
 </body>
+
 </html>
